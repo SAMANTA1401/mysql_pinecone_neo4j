@@ -3,7 +3,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    password = "Root@123",
+    password = "mYsql@2022",
     database = "crudapi"
 )
 
@@ -15,7 +15,7 @@ sql = '''update EMPLOYEE set AGE = AGE +1 where SEX = 'f' '''
 try:
     #execute the sql command
     cursor.execute(sql)
-    #commit your changes in the databse
+    #commit your changes in the database
     conn.commit()
 except:
     print("Error")
